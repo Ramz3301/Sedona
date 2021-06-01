@@ -1,0 +1,117 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-blue: #81b3d2;
+  --basic-lightgray: #eeeeee;
+  --basic-brown: #766357;
+  --basic-black: #000000;
+}
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation {
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-white);
+}
+
+.features-list {
+  list-style: none;
+}
+.feature-item {
+  text-align: center;
+}
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.advantages-list {
+  list-style: none;
+}
+.advantage-item {
+  text-align: center;
+}
+.advantage-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.advantage-img {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.slogan {
+  text-align: center;
+}
+.button {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  border: none;
+  font: size 21px;
+  line-height: 26px;
+}
+.button:hover {
+  background-color: #604e43;
+}
+.button.active {
+  background-color: #503e33;
+}
+.index-columns {
+  color: #333333;
+  background-color: var(--basic-lightgray);
+  background-position: 0 0;
+}
+.main-footer {
+  color: var(--basic-black);
+}
+.footer-contacts a {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social ul {
+  list-style: none;
+}
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+}
