@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/images/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/images/favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap"
+    />
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/images/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
+          <img
+            src="img/images/logo.svg"
+            width="138"
+            height="70"
+            alt="Логотип сайта Седона"
+          />
         </a>
         <ul>
           <li><a href="blank.html">Информация</a></li>
@@ -22,7 +33,12 @@
         </ul>
       </nav>
       <section>
-        <img src="img/images/background-photo.jpg" width="1200" height="509" alt="Welcome">
+        <img
+          src="img/images/background-photo.jpg"
+          width="1200"
+          height="509"
+          alt="Welcome"
+        />
       </section>
     </header>
     <main>
@@ -34,15 +50,15 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <input type="checkbox" name="pool" id="filter-pool" checked />
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" id="filter-parking">
+                <input type="checkbox" name="parking" id="filter-parking" />
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi" />
                 <label for="filter-wi-fi">WI-FI</label>
               </li>
             </ul>
@@ -51,20 +67,25 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked />
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <input type="checkbox" name="motel" id="filter-motel" checked />
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <input
+                  type="checkbox"
+                  name="apartments"
+                  id="filter-apartments"
+                  checked
+                />
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <input type="range" min="0" max="3000">
+          <input type="range" min="0" max="3000" />
           <button type="submit">Показать</button>
         </form>
       </section>
@@ -88,15 +109,20 @@
             <a href="blank.html">
               <h3>Amara resort&spa</h3>
             </a>
-            <p>
-              <img src="img/images/catalog/hotel-1.jpg" width="135" height="90" alt="закат с видом на гостиницу и горы">
-            </p>
+            <a>
+              <p>
+                <img
+                  src="img/images/catalog/hotel-1.jpg"
+                  width="135"
+                  height="90"
+                  alt="закат с видом на гостиницу и горы"
+                />
+              </p>
             </a>
-            <p>
-              <dl>
-                <dt>Гостиница</dt><dd>от 4000 ₽</dd>
-              </dl>
-            </p>
+            <dl>
+              <dt>Гостиница</dt>
+              <dd>от 4000 ₽</dd>
+            </dl>
             <p>
               <button type="button">Подробнее</button>
             </p>
@@ -109,18 +135,24 @@
               <li>3</li>
               <li>4</li>
             </ul>
-            <p>
-              Рейтинг:8,5
-            </p>
+            <p>Рейтинг:8,5</p>
+          </li>
+
           <li>
             <a href="blank.html">
               <h3>Desert Quail INN</h3>
             </a>
             <p>
-              <img src="img/images/catalog/hotel-2.jpg" witdh="135" height="90" alt="вывеска мотеля и парковка">
+              <img
+                src="img/images/catalog/hotel-2.jpg"
+                width="135"
+                height="90"
+                alt="вывеска мотеля и парковка"
+              />
             </p>
             <dl>
-              <dt>Мотель</dt><dd>от 3000 ₽</dd>
+              <dt>Мотель</dt>
+              <dd>от 3000 ₽</dd>
             </dl>
             <p>
               <button type="button">Подробнее</button>
@@ -133,19 +165,23 @@
               <li>2</li>
               <li>3</li>
             </ul>
-            <p>
-              Рейтинг:8,9
-            </p>
+            <p>Рейтинг:8,9</p>
           </li>
           <li>
             <a href="blank.html">
               <h3>Villas At Poco Diablo</h3>
             </a>
             <p>
-              <img src="img/images/catalog/hotel-3.jpg" width="135" height="90" alt="вид на апартаменты,деревья и трава">
+              <img
+                src="img/images/catalog/hotel-3.jpg"
+                width="135"
+                height="90"
+                alt="вид на апартаменты,деревья и трава"
+              />
             </p>
             <dl>
-              <dt>Апартаменты</dt><dd>2000 ₽</dd>
+              <dt>Апартаменты</dt>
+              <dd>2000 ₽</dd>
             </dl>
             <p>
               <button type="button">Подробнее</button>
@@ -157,9 +193,7 @@
               <li>1</li>
               <li>2</li>
             </ul>
-            <p>
-              Рейтинг:9,2
-            </p>
+            <p>Рейтинг:9,2</p>
           </li>
         </ul>
       </section>
@@ -189,7 +223,12 @@
       <p>
         WEBSITE BY
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/images/logo-htmlacademy.svg" witdh="115" height="33" alt="логотип HTML Academy">
+          <img
+            src="img/images/logo-htmlacademy.svg"
+            width="115"
+            height="33"
+            alt="логотип HTML Academy"
+          />
         </a>
       </p>
     </footer>
