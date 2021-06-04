@@ -113,11 +113,11 @@ img {
 }
 
 .infrastructure,
-.type-of-housing,
+.housing-list,
 .sorting,
 .socials,
 .footer-social,
-.hotel {
+.hotel-list {
   list-style: none;
 }
 
