@@ -7,6 +7,8 @@
   --basic-darkbrown: #503e33;
   --basic-black: #000000;
   --basic-carbon: #333333;
+  --basic-skyblue: #669ec0;
+  --basic-darkblue: #5496bd;
 }
 
 body {
@@ -29,6 +31,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main-header {
+  background-color: var(--basic-white);
 }
 
 .main-navigation {
@@ -104,6 +110,38 @@ img {
   color: var(--basic-carbon);
   background-color: var(--basic-lightgray);
   background-position: 0 0;
+}
+
+.infrastructure,
+.housing-list,
+.sorting,
+.socials,
+.footer-social,
+.hotel-list {
+  list-style: none;
+}
+
+.info {
+  background-color: var(--basic-blue);
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reservation {
+  background-color: var(--basic-lightbrown);
+  color: var(--basic-white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info:hover {
+  background-color: var(--basic-skyblue);
+}
+
+.info:active {
+  background-color: var(--basic-darkblue);
 }
 
 .main-footer {
