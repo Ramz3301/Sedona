@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
@@ -14,10 +14,10 @@
     <link href="normalize.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="page-body center">
     <header class="main-header">
-      <nav>
-        <a href="index.html">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img
             src="img/images/logo.svg"
             width="138"
@@ -25,26 +25,22 @@
             alt="Логотип сайта Седона"
           />
         </a>
-        <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
-        </ul>
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
+            <ul class="site-navigation">
+              <li><a href="blank.html">Информация</a></li>
+              <li><a href="blank.html">Фото и видео</a></li>
+              <li><a href="blank.html">Карта штата</a></li>
+              <li><a href="blank.html">Гостиницы</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <section>
-        <img
-          src="img/images/background-catalog.jpg"
-          width="1200"
-          height="217"
-          alt="Размытое фото гор"
-        />
-      </section>
     </header>
-    <main>
-      <h1>Каталог гостиниц</h1>
-      <section>
-        <h2>Фильтр выбора жилья</h2>
+    <main class="center">
+      <h1 class="visually-hidden">Каталог гостиниц</h1>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр выбора жилья</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -90,20 +86,22 @@
         </form>
       </section>
       <section>
-        <h2>Гостиницы</h2>
-        <p><strong>Найдено:3</strong></p>
-        <p>Сортировка</p>
-        <ul class="sorting">
-          <li>
-            <button type="button">По цене</button>
-          </li>
-          <li>
-            <button type="button">По типу</button>
-          </li>
-          <li>
-            <button type="button">По рейтингу</button>
-          </li>
-        </ul>
+        <h2 class="visually-hidden">Гостиницы</h2>
+        <div class="breadcrumbs">
+          <p><strong>Найдено:3</strong></p>
+          <p>Сортировка</p>
+          <ul class="sorting">
+            <li>
+              <button type="button">По цене</button>
+            </li>
+            <li>
+              <button type="button">По типу</button>
+            </li>
+            <li>
+              <button type="button">По рейтингу</button>
+            </li>
+          </ul>
+        </div>
         <ul class="hotel-list">
           <li>
             <a href="blank.html">
@@ -137,7 +135,6 @@
             </ul>
             <p>Рейтинг:8,5</p>
           </li>
-
           <li>
             <a href="blank.html">
               <h3>Desert Quail INN</h3>
@@ -276,10 +273,5 @@
         </a>
       </p>
     </footer>
-    <section>
-      <h2>Как до нас добраться</h2>
-      <!-- Здесь будет карта -->
-      <button type="button">Закрыть</button>
-    </section>
   </body>
 </html>
