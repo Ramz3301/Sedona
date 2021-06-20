@@ -135,7 +135,7 @@ img {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-auto-flow: dense;
-  height: 256px;
+  min-height: 256px;
 }
 
 .advantages .true-city-text {
@@ -165,7 +165,6 @@ img {
   text-align: center;
   color: var(--basic-carbon);
   background-color: var(--basic-lightgray);
-  background-position: 0 0;
 }
 
 .advantage-item h3 {
@@ -181,17 +180,11 @@ img {
 .advantage-img {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-}
-
-.advantage-img,
-.advantages-list,
-.features-list {
   margin: 0;
   padding: 0;
 }
 
 .number {
-  margin: 0;
   margin-top: 25px;
   margin-bottom: 23px;
 }
@@ -200,9 +193,11 @@ img {
   margin-bottom: 82px;
 }
 
-.features-list,
-.advantages-list {
+.advantages-list,
+.features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features-list {
@@ -228,6 +223,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: bottom;
   font: inherit;
   text-align: center;
   text-transform: uppercase;
