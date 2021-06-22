@@ -53,7 +53,12 @@
 
 .filter {
   display: flex;
+  justify-content: space-between;
   width: 140px;
+}
+
+.filter fieldset {
+  border: none;
 }
 
 a {
@@ -114,6 +119,14 @@ img {
   width: 100%;
 }
 
+.site-navigation a {
+  display: block;
+  padding: 15px;
+  color: var(--basic-black);
+  line-height: 26px;
+  font-weight: 700;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-white);
@@ -127,13 +140,21 @@ img {
 }
 
 .slogan {
-  text-align: center;
   margin-bottom: 60px;
+  width: 100%;
+  height: 216px;
+  padding: 42px;
 }
 
 .slogan .motto {
   font-weight: 700;
   font-size: 21px;
+  line-height: 26px;
+  margin-top: 56px;
+  margin-bottom: 17px;
+}
+
+.slogan .five-reasons {
   line-height: 26px;
 }
 
@@ -190,6 +211,11 @@ img {
   padding: 0;
 }
 
+.number {
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+
 .features {
   margin-bottom: 82px;
 }
@@ -204,6 +230,7 @@ img {
 .features-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
+  align-items: center;
   margin: 0;
   padding: 0;
   min-height: 330px;
@@ -230,7 +257,7 @@ img {
   content: "";
   position: absolute;
   width: 75px;
-  height: 70px;
+  height: 72px;
   background-image: url("img/food.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -241,13 +268,11 @@ img {
 .souvenirs::before {
   content: "";
   position: absolute;
-  width: 64px;
-  height: 77px;
+  width: 75px;
+  height: 72px;
   background-image: url("img/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  top: -60px;
-  left: 165px;
 }
 
 .feature-item p {
@@ -257,6 +282,8 @@ img {
 .feature-item h3 {
   font-size: 21px;
   line-height: 21px;
+  margin-top: 28px;
+  margin-bottom: 25px;
 }
 
 .button {
@@ -265,14 +292,14 @@ img {
   font: inherit;
   text-align: center;
   text-transform: uppercase;
-  vertical-align: middle;
   background-color: var(--basic-lightbrown);
   color: var(--basic-white);
   border: none;
   font-size: 21px;
   line-height: 26px;
-  height: 86px;
-  width: 568px;
+  padding: 30px 125px;
+  margin-top: 54px;
+  margin-bottom: 0;
 }
 
 .button:hover {
@@ -359,6 +386,11 @@ img {
   background-color: var(--basic-darkblue);
 }
 
+.map {
+  margin: 0;
+  padding: 0;
+}
+
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -382,7 +414,6 @@ img {
 }
 
 .footer-social {
-  text-align: center;
   justify-self: center;
   width: 150px;
 }
@@ -393,7 +424,28 @@ img {
 
 .social-list {
   display: flex;
-  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-skyblue);
+}
+
+.social-button:active {
+  background-color: var(--basic-darkblue);
 }
 
 .footer-copyright {
