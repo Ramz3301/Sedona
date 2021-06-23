@@ -120,7 +120,7 @@ img {
 }
 
 .img-welcome {
-  background-image: url(img/images/background-photo.jpg);
+  background-image: url(img/background-welcome.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 509px;
@@ -190,11 +190,6 @@ img {
   padding: 0;
 }
 
-.number {
-  margin-top: 25px;
-  margin-bottom: 23px;
-}
-
 .features {
   margin-bottom: 82px;
 }
@@ -216,6 +211,43 @@ img {
 
 .feature-item {
   text-align: center;
+  position: relative;
+}
+
+.house::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  background-image: url("img/house.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -60px;
+  left: 165px;
+}
+
+.food::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  background-image: url("img/food.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -60px;
+  left: 165px;
+}
+
+.souvenirs::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 77px;
+  background-image: url("img/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -60px;
+  left: 165px;
 }
 
 .feature-item p {
