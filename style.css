@@ -211,11 +211,6 @@ img {
   padding: 0;
 }
 
-/*.number {
-  margin-top: 25px;
-  margin-bottom: 23px;
-} */
-
 .features {
   margin-bottom: 82px;
 }
@@ -257,7 +252,7 @@ img {
   content: "";
   position: absolute;
   width: 75px;
-  height: 72px;
+  height: 70px;
   background-image: url("img/food.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -268,8 +263,8 @@ img {
 .souvenirs::before {
   content: "";
   position: absolute;
-  width: 75px;
-  height: 72px;
+  width: 64px;
+  height: 77px;
   background-image: url("img/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
