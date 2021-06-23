@@ -268,16 +268,6 @@ img {
   display: flex;
 }
 
-/*.hotel-list {
-  display: flex;
-  flex-direction: column;
-} */
-
-/*.hotel-list {
-  display: grid;
-  grid-template-rows: 150px 150px 150px;
-} */
-
 .hotel-img {
   height: 90px;
   width: 135px;
