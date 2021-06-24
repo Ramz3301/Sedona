@@ -18,21 +18,19 @@
     <div class="center">
       <header class="main-header">
         <nav class="main-navigation">
+          <a href="index.html" class="main-header-logo">
+            <img
+              src="img/images/logo.svg"
+              width="138"
+              height="70"
+              alt="Логотип сайта Седона"
+            />
+          </a>
           <div class="main-header-bar">
             <div class="main-navigation-wrapper">
               <ul class="site-navigation">
                 <li><a href="blank.html">Информация</a></li>
                 <li><a href="blank.html">Фото и видео</a></li>
-                <li>
-                  <a href="index.html" class="main-header-logo">
-                    <img
-                      src="img/images/logo.svg"
-                      width="138"
-                      height="70"
-                      alt="Логотип сайта Седона"
-                    />
-                  </a>
-                </li>
                 <li><a href="blank.html">Карта штата</a></li>
                 <li><a href="blank.html">Гостиницы</a></li>
               </ul>
@@ -117,14 +115,38 @@
                 </li>
               </ul>
             </fieldset>
-            <input type="range" min="0" max="3000" />
-            <button type="submit">Показать</button>
+            <fieldset class="filter-item">
+              <legend>Стоимость в сутки,Р:</legend>
+              <div class="range-filter">
+                <!--<div class="separator"></div>-->
+                <div class="price-controls">
+                  <label class="min-price"
+                    >от 0<!--<input type="number" name="min-price" value="0"
+                  />--></label
+                  >
+                  <label class="max-price"
+                    >до 3000<!--<input type="number" name="max-price" value="3000"
+                  />--></label
+                  >
+                </div>
+                <div class="range-controls">
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="show">
+                  <button class="show-button" type="button">Показать</button>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </section>
         <section>
           <h2 class="visually-hidden">Гостиницы</h2>
           <div class="breadcrumbs">
-            <p class="find">Найдено:3</p>
+            <p class="found">Найдено:3</p>
             <ul class="sorting">
               <li>Сортировка:</li>
               <li>
@@ -137,55 +159,57 @@
                 <button class="sorting-item" type="button">По рейтингу</button>
               </li>
             </ul>
+            <div class="triangles">
+              <div class="triangle-up"></div>
+              <div class="triangle-down"></div>
+            </div>
           </div>
           <ul class="hotel-list">
             <li class="hotel-item">
-              <a>
-                <p class="hotel-img">
-                  <img
-                    src="img/images/catalog/hotel-1.jpg"
-                    width="135"
-                    height="90"
-                    alt="закат с видом на гостиницу и горы"
-                  />
-                </p>
-              </a>
+              <div class="hotel-img">
+                <img
+                  src="img/images/catalog/hotel-1.jpg"
+                  width="135"
+                  height="90"
+                  alt="закат с видом на гостиницу и горы"
+                />
+              </div>
               <div class="description">
-                <a href="blank.html">
-                  <h3>Amara resort&spa</h3>
-                </a>
+                <a href="blank.html"><h3>Amara resort&spa</h3></a>
                 <dl class="price">
                   <dt>Гостиница</dt>
                   <dd>от 4000 ₽</dd>
                 </dl>
                 <div class="hotel-button">
-                  <p>
+                  <div>
                     <button class="info" type="button">Подробнее</button>
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <button class="reservation" type="button">
                       Забронировать
                     </button>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <ul class="hotel-level">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-              </ul>
-              <p>Рейтинг:8,5</p>
+              <div class="rating">
+                <ul class="hotel-level">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                </ul>
+                <p class="hotel-rating">Рейтинг:8,5</p>
+              </div>
             </li>
             <li class="hotel-item">
-              <p class="hotel-img">
+              <div class="hotel-img">
                 <img
                   src="img/images/catalog/hotel-2.jpg"
                   width="135"
                   height="90"
                   alt="вывеска мотеля и парковка"
                 />
-              </p>
+              </div>
               <div class="description">
                 <a href="blank.html">
                   <h3>Desert Quail INN</h3>
@@ -195,32 +219,34 @@
                   <dd>от 3000 ₽</dd>
                 </dl>
                 <div class="hotel-button">
-                  <p>
+                  <div>
                     <button class="info" type="button">Подробнее</button>
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <button class="reservation" type="button">
                       Забронировать
                     </button>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <ul class="hotel-level">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-              <p>Рейтинг:8,9</p>
+              <div class="rating">
+                <ul class="hotel-level">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+                <p class="hotel-rating">Рейтинг:8,9</p>
+              </div>
             </li>
             <li class="hotel-item">
-              <p class="hotel-img">
+              <div class="hotel-img">
                 <img
                   src="img/images/catalog/hotel-3.jpg"
                   width="135"
                   height="90"
                   alt="вид на апартаменты,деревья и трава"
                 />
-              </p>
+              </div>
               <div class="description">
                 <a href="blank.html">
                   <h3>Villas At Poco Diablo</h3>
@@ -230,21 +256,23 @@
                   <dd>2000 ₽</dd>
                 </dl>
                 <div class="hotel-button">
-                  <p>
+                  <div>
                     <button class="info" type="button">Подробнее</button>
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <button class="reservation" type="button">
                       Забронировать
                     </button>
-                  </p>
+                  </div>
                 </div>
               </div>
-              <ul class="hotel-level">
-                <li>1</li>
-                <li>2</li>
-              </ul>
-              <p>Рейтинг:9,2</p>
+              <div class="rating">
+                <ul class="hotel-level">
+                  <li>1</li>
+                  <li>2</li>
+                </ul>
+                <p class="hotel-rating">Рейтинг:9,2</p>
+              </div>
             </li>
           </ul>
         </section>
