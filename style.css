@@ -343,7 +343,8 @@ img {
 .sorting,
 .socials,
 .footer-social,
-.hotel-list {
+.hotel-list,
+.hotel-level {
   list-style: none;
 }
 
@@ -455,10 +456,6 @@ img {
   top: 29px;
 }
 
-.show {
-  align-self: center;
-}
-
 .show-button {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
@@ -472,6 +469,12 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom: 32px;
+  align-self: center;
+}
+
+.show-button:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .filter legend {
@@ -602,6 +605,16 @@ img {
   line-height: 26px;
   margin-top: 23px;
   margin-bottom: 7px;
+  color: var(--basic-black);
+}
+
+.hotel-item h3:hover {
+  color: var(--basic-blue);
+}
+
+.hotel-item h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .description {
@@ -623,6 +636,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.hotel-level {
+  display: flex;
 }
 
 .hotel-rating {
