@@ -272,7 +272,7 @@ img {
   border: none;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 21px;
   padding: 30px 125px;
   margin-top: 24px;
   margin-bottom: 0;
@@ -585,24 +585,39 @@ img {
   text-align: center;
 }
 
+.reservation {
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 3px 17px 3px 16px;
+  margin: 0;
+  background-color: var(--basic-lightbrown);
+  color: var(--basic-white);
+  border: none;
+  cursor: pointer;
+}
+
+.reservation:hover {
+  background-color: var(--basic-brown);
+}
+
+.reservation:active {
+  background-color: var(--basic-darkbrown);
+}
+
+.reservation:active .reserve {
+  opacity: 0.3;
+}
+
 .info {
   background-color: var(--basic-blue);
   text-align: center;
   color: var(--basic-white);
   font-weight: 700;
+  line-height: 21px;
   text-transform: uppercase;
   padding: 3px 16px 3px 17px;
   margin-right: 6px;
-  border: none;
-  cursor: pointer;
-}
-
-.reservation {
-  background-color: var(--basic-lightbrown);
-  color: var(--basic-white);
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 3px 17px 3px 16px;
   border: none;
   cursor: pointer;
 }
@@ -613,6 +628,10 @@ img {
 
 .info:active {
   background-color: var(--basic-darkblue);
+}
+
+.info:active .more-info {
+  opacity: 0.3;
 }
 
 .map {
