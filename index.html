@@ -59,8 +59,10 @@
           </div>
           <div class="advantage-img true-city-text">
             <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="number">— №1 —</p>
+            <p class="advantage-text">
+              Седона — не аттракцион для туристов, там течёт своя жизнь
+            </p>
           </div>
         </section>
         <section class="features">
@@ -91,7 +93,7 @@
           </div>
           <div class="advantage-img devils-text">
             <h3>Там есть мост дьявола</h3>
-            <p>— №2 —</p>
+            <p class="number">— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
@@ -100,24 +102,24 @@
           <ul class="advantages-list">
             <li class="advantage-item">
               <h3>Небольшая площадь</h3>
-              <p>— №3 —</p>
+              <p class="number">— №3 —</p>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantage-item">
               <h3>Красивая дорога</h3>
-              <p>— №4 —</p>
+              <p class="number">— №4 —</p>
               <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
             <li class="advantage-item">
               <h3>Мало туристов</h3>
-              <p>— №5 —</p>
+              <p class="number">— №5 —</p>
               <p>Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </section>
         <section class="search">
           <h2>Заинтересовались?</h2>
-          <p>
+          <p class="search-text">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
@@ -215,31 +217,54 @@
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <!-- Здесь будет карта -->
-        <button class="modal-close" type="button">Закрыть</button>
       </section>
-      <section class="modal">
+      <section class="modal modal-login">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <button class="button" type="button">Поиск гостиницы в Седоне</button>
+        <!--<button class="button" type="button">Поиск гостиницы в Седоне</button>-->
         <form class="hotel-search" method="post">
-          <p class="hotel-search-item">
-            <label for="arrival-date">Дата заезда</label>
-            <input id="arrival-date" type="text" name="date" />
-          </p>
-          <p class="hotel-search-item">
-            <label for="date-of-departure">Дата выезда</label>
-            <input id="date-of-departure" type="text" name="date" />
-          </p>
-          <div>
-            <label for="adults">Взрослые:</label>
-            <button class="bt-minus">-</button>
-            <input id="adults" type="text" value="2" data-max-count="100" />
-            <button class="bt-plus">+</button>
+          <div class="hotel-search-item">
+            <label for="arrival-date">Дата заезда:</label>
+            <input
+              class="date-on-input"
+              id="arrival-date"
+              type="text"
+              name="date"
+              value="24 апреля 2017"
+            />
           </div>
-          <div>
+          <div class="hotel-search-item">
+            <label for="date-of-departure">Дата выезда:</label>
+            <input
+              class="date-off-input"
+              id="date-of-departure"
+              type="text"
+              name="date"
+              value="4 июля 2017"
+            />
+          </div>
+          <div class="adults">
+            <label for="adults">Взрослые:</label>
+            <input
+              class="adults-input"
+              id="adults"
+              type="text"
+              value="2"
+              data-max-count="100"
+            />
+            <button class="minus" type="button"></button>
+            <button class="plus" type="button"></button>
+          </div>
+          <div class="childrens">
             <label for="childrens">Дети:</label>
-            <button class="bt-minus">-</button>
-            <input id="childrens" type="text" value="0" data-max-count="100" />
-            <button class="bt-plus">+</button>
+            <input
+              class="childrens-input"
+              id="childrens"
+              type="text"
+              value="0"
+              data-max-count="100"
+            />
+            <button class="minus" type="button"></button>
+            <button class="plus" type="button"></button>
           </div>
           <button class="find" type="button">Найти</button>
         </form>
