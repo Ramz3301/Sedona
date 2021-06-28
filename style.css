@@ -138,7 +138,6 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 42px;
   margin-bottom: 17px;
 }
 
@@ -728,63 +727,6 @@ img {
   padding-bottom: 24px;
 }
 
-/*
-.hotel-search {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 55px;
-}
-
-.date-on-input,
-.date-off-input {
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 26px;
-  width: 320px;
-  padding: 6px 13px;
-}
-
-.calendar {
-  position: relative;
-}
-
-.hotel-search-item {
-  position: relative;
-}
-
-.hotel-search-item::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 23px;
-  background-image: url("img/calendar.svg");
-  background-repeat: no-repeat;
-  top: 7px;
-  right: 9px;
-}
-
-.hotel-search-item {
-  margin: 0;
-}
-
-
-
-.adults {
-  margin-bottom: 55px;
-  margin-right: 53px;
-}
-
-.adults-input,
-.childrens-input {
-  width: 114px;
-  height: 38px;
-  text-align: center;
-  line-height: 26px;
-  font-weight: 700;
-  margin-left: 15px;
-}
-*/
-
 .button {
   display: inline-block;
   vertical-align: bottom;
@@ -886,7 +828,7 @@ img {
 
 .adults .minus {
   top: 16px;
-  left: 103px;
+  left: 123px;
 }
 
 .childrens .minus {
@@ -942,4 +884,8 @@ img {
   background-repeat: no-repeat;
   top: 7px;
   right: 9px;
+}
+
+.adults label {
+  margin-right: 20px;
 }
