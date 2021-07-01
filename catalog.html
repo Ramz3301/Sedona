@@ -7,9 +7,11 @@
     <link rel="icon" href="img/images/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/images/favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap"
     />
     <link href="normalize.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -114,12 +116,12 @@
               </ul>
             </fieldset>
             <fieldset class="filter-item">
-              <legend>Стоимость в сутки,Р:</legend>
+              <legend>Стоимость в сутки, <span>&#8381;</span>:</legend>
               <div class="range-filter">
                 <div class="separator"></div>
                 <div class="price-controls">
                   <label class="min-price">от 0</label>
-                  <label class="max-price">до 3000></label>
+                  <label class="max-price">до 3000</label>
                 </div>
                 <div class="range-controls">
                   <div class="toggle toggle-min" tabindex="0"></div>
@@ -136,9 +138,9 @@
         <section>
           <h2 class="visually-hidden">Гостиницы</h2>
           <div class="breadcrumbs">
-            <p class="found">Найдено:3</p>
-            <p>Сортировка:</p>
-            <ul class="sorting">
+            <p class="found">Найдено: 3</p>
+            <p class="sorting">Сортировка:</p>
+            <ul class="sorting-list">
               <li>
                 <button class="sorting-item" type="button">По цене</button>
               </li>
@@ -165,7 +167,7 @@
                 />
               </div>
               <div class="description">
-                <a href="blank.html"><h3>Amara resort&spa</h3></a>
+                <a href="blank.html"><h3>Amara resort & spa</h3></a>
                 <dl class="price">
                   <dt>Гостиница</dt>
                   <dd>от 4000 ₽</dd>
@@ -242,7 +244,7 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="hotel-rating">Рейтинг:8,5</p>
+                <p class="hotel-rating">Рейтинг: 8,5</p>
               </div>
             </li>
             <li class="hotel-item">
@@ -320,7 +322,7 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="hotel-rating">Рейтинг:8,9</p>
+                <p class="hotel-rating">Рейтинг: 8,9</p>
               </div>
             </li>
             <li class="hotel-item">
@@ -338,7 +340,7 @@
                 </a>
                 <dl class="price">
                   <dt>Апартаменты</dt>
-                  <dd>2000 ₽</dd>
+                  <dd>от 2000 ₽</dd>
                 </dl>
                 <div class="hotel-button">
                   <div>
@@ -384,7 +386,7 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="hotel-rating">Рейтинг:9,2</p>
+                <p class="hotel-rating">Рейтинг: 9,2</p>
               </div>
             </li>
           </ul>
@@ -393,14 +395,12 @@
       <footer class="main-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Как нас найти?</h2>
-          <p>
-            <a class="footer-hashtag" href="blank.html">#VISITSEDONA</a>
+          <p class="footer-hashtag">
+            <a href="blank.html">#VISITSEDONA</a>
           </p>
-          <p>
-            <a class="footer-phone" href="tel:+78005558628"
-              >+7 (800) 555-86-28</a
-            >
-          </p>
+          <span>
+            <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </span>
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
@@ -461,7 +461,7 @@
           </ul>
         </section>
         <p class="footer-copyright">
-          WEBSITE BY
+          <span class="footer-website">WEBSITE BY</span>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <svg
               width="115"
