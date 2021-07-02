@@ -390,6 +390,9 @@ img {
   list-style: none;
 }
 
+.infra {
+}
+
 .hotel-list {
   padding: 0;
   margin: 0;
@@ -407,27 +410,38 @@ img {
   display: flex;
   width: 100%;
   color: var(--basic-white);
+  padding-top: 27px;
+  padding-bottom: 32px;
+  padding-left: 72px;
+  padding-right: 73px;
+}
+
+.filter legend {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.checkbox-filter legend {
+  margin-bottom: 25px;
+}
+
+.filter-item legend {
+  margin-bottom: 11px;
 }
 
 .filter fieldset {
   border: none;
   padding: 0;
-  margin-top: 27px;
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .filter fieldset:first-child {
-  margin-left: 72px;
+  margin-right: 119px;
 }
 
 .filter fieldset:nth-child(2) {
-  margin-left: 119px;
-}
-
-.filter-item legend {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
+  margin-right: auto;
 }
 
 .filter-item {
@@ -510,19 +524,12 @@ img {
   padding: 7px 35px 8px 36px;
   text-transform: uppercase;
   cursor: pointer;
-  margin-bottom: 32px;
   align-self: center;
 }
 
 .show-button:hover {
   background-color: var(--basic-white);
   color: var(--basic-black);
-}
-
-.filter legend {
-  margin-top: 26px;
-  margin-bottom: 11px;
-  font-size: 16px;
 }
 
 .filter ul {
@@ -540,12 +547,14 @@ img {
   display: block;
   cursor: pointer;
   user-select: none;
+  margin-bottom: 25px;
+  left: 40px;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -36px;
+  left: -40px;
   top: 0;
   width: 23px;
   height: 23px;
@@ -557,7 +566,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: -36px;
+  left: -40px;
   width: 27px;
   height: 23px;
   background-image: url("img/checkbox-on.svg");
@@ -567,13 +576,15 @@ img {
 .breadcrumbs {
   display: flex;
   align-items: center;
+  padding: 28px 73px 34px;
 }
 
 .found {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin: 29px 46px 31px 73px;
+  margin: 0;
+  margin-right: 46px;
 }
 
 .sorting {
@@ -585,6 +596,7 @@ img {
 
 .sorting-list {
   display: flex;
+  margin: 0;
   margin-right: auto;
 }
 
@@ -629,7 +641,6 @@ img {
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
-  margin-right: 73px;
 }
 
 .hotel-img {
