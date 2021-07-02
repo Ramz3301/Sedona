@@ -22,7 +22,7 @@
         <nav class="main-navigation">
           <a href="index.html" class="main-header-logo">
             <img
-              src="img/images/logo.svg"
+              src="img/logo.svg"
               width="138"
               height="70"
               alt="Логотип сайта Седона"
@@ -30,10 +30,14 @@
           </a>
           <div class="main-navigation-wrapper">
             <ul class="site-navigation">
-              <li><a href="blank.html">Информация</a></li>
-              <li><a href="blank.html">Фото и видео</a></li>
-              <li><a href="blank.html">Карта штата</a></li>
-              <li><a href="catalog.html">Гостиницы</a></li>
+              <li class="header-info"><a href="blank.html">Информация</a></li>
+              <li class="header-photo">
+                <a href="blank.html">Фото и видео</a>
+              </li>
+              <li class="header-map"><a href="blank.html">Карта штата</a></li>
+              <li class="header-hotels">
+                <a href="catalog.html">Гостиницы</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -43,7 +47,8 @@
         <div class="img-welcome"></div>
         <section class="slogan">
           <p class="motto">
-            Седона — небольшой городок в Аризоне,заслуживающий большего!
+            Седона — небольшой городок в Аризоне,<br />заслуживающий
+            большего!<br />
           </p>
           <p class="five-reasons">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -60,9 +65,9 @@
             />
           </div>
           <div class="advantage-img true-city-text">
-            <h3>Настоящий городок</h3>
+            <h3 class="title-true-city">Настоящий городок</h3>
             <span class="number">— №1 —</span>
-            <p class="advantage-text">
+            <p class="advantage-text true-text">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
@@ -72,15 +77,21 @@
           <ul class="features-list">
             <li class="feature-item house">
               <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="house-text">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
             </li>
             <li class="feature-item food">
               <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="food-text">
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
             </li>
             <li class="feature-item souvenirs">
               <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
+              <p class="souvenirs-text">
+                Не только китайского, но и местного производства!
+              </p>
             </li>
           </ul>
         </section>
@@ -94,32 +105,32 @@
             />
           </div>
           <div class="advantage-img devils-text">
-            <h3>Там есть мост дьявола</h3>
+            <h3>Там есть<br />мост дьявола</h3>
             <span class="number">— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
         <h2 class="visually-hidden">Преимущества</h2>
-        <section class="advantages">
+        <section>
           <ul class="advantages-list">
             <li class="advantage-item">
-              <h3>Небольшая площадь</h3>
+              <h3 class="small-area">небольшая площадь</h3>
               <span class="number">— №3 —</span>
-              <p class="advantage-text">
+              <p class="advantage-text small-area-text">
                 Все достопримечательности находятся очень близко
               </p>
             </li>
             <li class="advantage-item">
-              <h3>Красивая дорога</h3>
+              <h3 class="nice-road">красивая дорога</h3>
               <span class="number">— №4 —</span>
-              <p class="advantage-text">
+              <p class="advantage-text nice-road-text">
                 Ехать в седону из лас-вегаса совсем не скучно!
               </p>
             </li>
             <li class="advantage-item">
-              <h3>Мало туристов</h3>
+              <h3 class="few-tourists">мало туристов</h3>
               <span class="number">— №5 —</span>
-              <p class="advantage-text">
+              <p class="advantage-text few-tourists-text">
                 Большинство едет в гранд каньон и толпится там
               </p>
             </li>
@@ -128,19 +139,19 @@
         <section class="search">
           <h2>Заинтересовались?</h2>
           <p class="search-text">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки, <br />и мы покажем вам лучшие
+            предложения гостиниц в седоне
           </p>
           <button class="button" type="button">Поиск гостиницы в Седоне</button>
         </section>
-        <p class="map">
+        <div class="map">
           <img
             src="img/images/map.jpg"
             width="1199"
             height="594"
             alt="карта с местонахождением Седоны"
           />
-        </p>
+        </div>
       </main>
       <footer class="main-footer">
         <section class="footer-contacts">
@@ -273,7 +284,7 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <!-- Здесь будет карта -->
       </section>
-      <section class="modal modal-login">
+      <section class="modal modal-login visually-hidden">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <form class="hotel-search" method="post">
           <div class="hotel-search-item">
