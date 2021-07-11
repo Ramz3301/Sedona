@@ -13,8 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="normalize.min.css" rel="stylesheet" />
-    <link href="style.min.css" rel="stylesheet" />
+    <link href="styles/normalize.min.css" rel="stylesheet" />
+    <link href="styles/style.min.css" rel="stylesheet" />
   </head>
   <body class="page-body inner-page">
     <div class="center">
@@ -122,14 +122,25 @@
             <fieldset class="filter-item">
               <legend>Стоимость в сутки, <span>&#8381;</span>:</legend>
               <div class="range-filter">
-                <div class="separator"></div>
                 <div class="price-controls">
-                  <label class="min-price">от 0</label>
-                  <label class="max-price">До 3000</label>
+                  <label class="min-price"
+                    >от<input type="number" name="max-price" value="0"
+                  /></label>
+                  <label class="max-price"
+                    >До<input type="number" name="max-price" value="3000"
+                  /></label>
                 </div>
                 <div class="range-controls">
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <div
+                    class="toggle toggle-min"
+                    tabindex="0"
+                    aria-label="стоимость в сутки от"
+                  ></div>
+                  <div
+                    class="toggle toggle-max"
+                    tabindex="0"
+                    aria-label="стоимость в сутки до"
+                  ></div>
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
@@ -147,19 +158,21 @@
             <p class="sorting">Сортировка:</p>
             <ul class="sorting-list">
               <li>
-                <button class="sorting-item current" type="button">
-                  По цене
-                </button>
+                <a class="sorting-item current" href="#"> По цене </a>
               </li>
               <li>
-                <button class="sorting-item" type="button">По типу</button>
+                <a class="sorting-item" href="#">По типу</a>
               </li>
               <li>
-                <button class="sorting-item" type="button">По рейтингу</button>
+                <a class="sorting-item" href="#">По рейтингу</a>
               </li>
             </ul>
             <div class="triangles">
-              <div tabindex="0" class="triangle-up">
+              <div
+                tabindex="0"
+                class="triangle-up"
+                aria-label="сортировка снизу вверх"
+              >
                 <svg
                   width="11"
                   height="10"
@@ -170,7 +183,11 @@
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
                 </svg>
               </div>
-              <div tabindex="0" class="triangle-down current-triangle">
+              <div
+                tabindex="0"
+                class="triangle-down current-triangle"
+                aria-label="сортировка сверху вниз"
+              >
                 <svg
                   width="11"
                   height="10"
@@ -203,76 +220,19 @@
                 </div>
                 <div class="hotel-button">
                   <div>
-                    <button class="info" type="button">
+                    <a class="info" href="#">
                       <span class="more-info">Подробнее</span>
-                    </button>
+                    </a>
                   </div>
                   <div>
-                    <button class="reservation" type="button">
+                    <a class="reservation" href="#">
                       <span class="reserve">Забронировать</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="rating">
-                <ul class="hotel-level">
-                  <li class="star-1">
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                  <li class="star-2">
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                  <li class="star-3">
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                  <li class="star-4">
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                </ul>
+                <span class="star-1" aria-label="рейтинг 4 звезды"></span>
                 <p class="hotel-rating">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -297,62 +257,19 @@
                 </div>
                 <div class="hotel-button">
                   <div>
-                    <button class="info" type="button">
+                    <a class="info" href="#">
                       <span class="more-info">Подробнее</span>
-                    </button>
+                    </a>
                   </div>
                   <div>
-                    <button class="reservation" type="button">
+                    <a class="reservation" href="#">
                       <span class="reserve">Забронировать</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="rating">
-                <ul class="hotel-level">
-                  <li>
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                  <li>
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                  <li>
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                </ul>
+                <span class="star-2" aria-label="рейтинг 3 звезды"> </span>
                 <p class="hotel-rating">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -377,48 +294,19 @@
                 </div>
                 <div class="hotel-button">
                   <div>
-                    <button class="info" type="button">
+                    <a class="info" href="#">
                       <span class="more-info">Подробнее</span>
-                    </button>
+                    </a>
                   </div>
                   <div>
-                    <button class="reservation" type="button">
+                    <a class="reservation" href="#">
                       <span class="reserve">Забронировать</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="rating">
-                <ul class="hotel-level">
-                  <li>
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                  <li>
-                    <svg
-                      width="19"
-                      height="17"
-                      viewBox="0 0 19 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z"
-                        fill="#81B3D2"
-                      />
-                    </svg>
-                  </li>
-                </ul>
+                <span class="star-3" aria-label="рейтинг 2 звезды"></span>
                 <p class="hotel-rating">Рейтинг: 9,2</p>
               </div>
             </li>
